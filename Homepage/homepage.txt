@@ -1,0 +1,109 @@
+01. Home Page (হ োম হেজ) 
+Home Page হবে পুব ো Website-এ  Main Landing Page। ভিজিট  যেন প্রথম ৫–১০ যেবেবে  মবযেই েুঝবে 
+পোব ন SkillBridge েী য বন  প্রভেষ্ঠোন, েী েী যেোেস ে োয় এেং েীিোবে িভেস হবে হয়। 
+Section 1: Hero Banner 
+েড়, পভ ষ্কো  ও আযুভনে Banner থোেবে। এখোবন Institute-এ  মূল পভ ভিভে, Training Lab েো ভিক্ষোথীবে  
+Training-এ  ছভে এেং CTA (Call to Action Button) Button থোেবে। 
+Section 2: About SkillBridge (Short Introduction) 
+• SkillBridge IT Farm and Language Center is a modern skill development and language training 
+institute dedicated to preparing learners for successful careers through practical, competency
+based education. 
+We combine technology, language learning, and professional skills to help students become job
+ready, freelancing-ready, and entrepreneurship-ready. Our training focuses on hands-on 
+practice, real-world applications, and industry-relevant competencies, ensuring learners gain the 
+confidence and skills needed to succeed in today’s competitive world. 
+At SkillBridge, we believe that the right skills create the right opportunities. 
+Build Skills. Grow Career. 
+1. Institutional Training Approach 
+At SkillBridge IT Farm and Language Center, we follow the CBT&A (Competency-Based Training & 
+Assessment) approach, focusing not only on theoretical knowledge but also on developing the practical 
+skills required to perform real-world tasks effectively. 
+Our Training Approach Includes: 
+• Competency-Based Learning focused on measurable skills and outcomes. 
+• Training delivered by experienced and NSDA-associated trainers. 
+• Small-batch learning with personalized guidance and mentoring. 
+• Hands-on practice and project-based learning to build practical experience. 
+• Regular assessment and performance evaluation to measure competency. 
+• A learner-centered approach designed to build confidence, practical ability, and workplace 
+readiness. 
+2. Practical & Competency-Based Learning 
+o At SkillBridge, we emphasize Learning by Doing. Learners gain practical experience by 
+performing hands-on tasks, working on real-world projects, and applying their knowledge in 
+practical situations. 
+o What We Provide: 
+▪ Practical, workshop-based learning with extensive hands-on activities. 
+▪ Practice through real-world projects and case studies. 
+▪ Training with industry-relevant software, tools, and technologies. 
+▪ Regular feedback, practice, and competency assessment for continuous improvement. 
+▪ Career-focused training designed to prepare learners for employment, freelancing, and 
+entrepreneurship. 
+o Suggested Website Highlight 
+Learn by Doing. Build Real Skills. Grow Your Career. 
+Learn More About Us Button 
+Section 3: Explore Our Courses 
+যেোেসগুবলো Category অনুেোয়ী Card আেোব  যেখোবনো হবে। 
+প্রভেটট Card-এ থোেবে Course Name, Short Description, Level (েভে প্রবেোিে হয়) এেং View Details Button। 
+Section 4: Why Choose Skill Bridge? 
+ Practical-Based Training 
+ Modern Computer Lab 
+ Experienced Trainers 
+ Competency-Based Learning 
+ Career & Freelancing Guidance 
+ Supportive Learning Environment 
+Section 5: Upcoming Batches, Admission & Internship Opportunities 
+ Other Professional Alternatives 
+ 1. Join Our Upcoming Batches & Admissions Open 
+ 2. Admissions Now Open | Upcoming Batches | Internship Opportunities 
+ 3. Enroll in Upcoming Batches & Explore Internship Opportunities 
+ 4. Start Your Career with Our Upcoming Batches & Internships 
+ 5. New Batch Enrollment & Internship Opportunities Available 
+Button Text Ideas 
+ - Apply Now 
+ - Enroll Today 
+ - View Upcoming Batches 
+ - Admission Details 
+ - Explore Internship Opportunities 
+Section 6: Language Courses 
+SkillBridge IT Farm and Language Center offers practical English, Japanese, German, and Korean 
+language courses for learners interested in international education, overseas employment, and professional 
+opportunities. The courses focus on speaking, listening, reading, writing, grammar, vocabulary, 
+pronunciation, and practical communication skills according to the learner’s level. 
+Our language training is designed to help learners build the communication skills required for study, work, 
+and everyday life abroad. We also provide general guidance on overseas career opportunities, language 
+proficiency requirements, application procedures, and visa-related documentation where applicable. 
+Learn a Language. Expand Your Opportunities. 
+Section 7: NSDA Regular / RPL Assessment Highlight 
+RPL Assessment ও েংভিষ্ট েোেসক্রবম  েংভক্ষপ্ত পভ ভিভে এেং Assessment Details Button। 
+SkillBridge IT Farm and Language Center-এ Regular এেং RPL (Recognition of Prior Learning) — উিয় 
+য বন  Assessment েক্ষেোভিভিে (Competency-Based) পদ্ধভেবে পভ িোভলে হয়। এই মূলেোয়বন  মোযেবম 
+এেিন প্রভিক্ষণোথী ভনযসোভ ে ইউভনট অনুেোয়ী প্রবয়োিনীয় জ্ঞোন, েক্ষেো ও েোস্তে েোি ে ো  েক্ষমেো অিসন 
+েব বছন ভে নো, েো েোিোই ে ো হয়। 
+Assessment প্রজক্রয়ো স্বচ্ছ, মোনেম্মে এেং েোস্তে েোবি  ওপ  ভিভি েব  পভ িোভলে হয়, েোবে প্রভিক্ষণোথী ো 
+েোবে  অজিসে েক্ষেো  েথোেথ মূলেোয়ন যপবে পোব ন। 
+Regular Assessment 
+Regular Course-এ  ভিক্ষোথীবে  িনে যেোেস যিবে ভনযসোভ ে Competency Assessment অনুটষ্ঠে হয়। 
+েংবক্ষবপ: 
+ ৩ মোবে  ভনয়ভমে প্রভিক্ষণ যিবে Assessment। 
+ েত্ত্ব ও প্রেোেটটেেোল—উিয় অংবি  মূলেোয়ন। 
+ অভেভ ক্ত যেোবনো Assessment Fee যনই। 
+ ভনযসোভ ে মোনেণ্ড অনুেোয়ী েক্ষেো েোিোই ে ো হয়। 
+RPL (Recognition of Prior Learning) Assessment 
+েোবে  পূেস যথবেই েোবি  অভিজ্ঞেো েো েক্ষেো  বয়বছ, েো ো RPL Assessment-এ  মোযেবম যেই েক্ষেো  
+আনুষ্ঠোভনে মূলেোয়বন  েুবেোগ পোন। 
+েংবক্ষবপ: 
+ পূেস অভিজ্ঞেো ও েক্ষেো  ভিভিবে মূলেোয়ন। 
+ েংভক্ষপ্ত ওভ বয়বেিন/প্রস্তুভেমূলে ক্লোবে  প  Assessment। 
+ েোস্তে েোবি  মোযেবম েক্ষেো েোিোই। 
+ নেুন েব  েীর্সবময়োভে যেোেস েম্পন্ন ে ো  প্রবয়োিন হয় নো। 
+Assessment Details (Button Section) 
+Assessment Details 
+Regular ও RPL Assessment-এ  েময়েূভি, যেোগেেো, প্রবয়োিনীয় েোগিপত্র, ভি এেং মূলেোয়ন প্রজক্রয়ো েম্পবেস 
+ভেস্তোভ ে িোনবে ভনবি  েোটবন ভক্লে েরুন। (Go to the Assessment form) 
+Button Text: Assessment Details 
+Section 8: Facilities & Gallery Preview 
+Institute-এ  েোস্তে Lab, Classroom, Orientation ও Training Activity-এ  ছভে। 
+Section 9: Latest Notice & News 
+েেসবিে Admission Circular, Class Routine, Assessment Notice ও Institute News। 
+Section 10: Final CTA & Footer 
+“Start Your Skill Development Journey Today” ভিব োনোবম Admission CTA, Contact Information ও Quick 
+Links। 

@@ -1,0 +1,158 @@
+03. Courses + Course Details Page 
+এটট হবে ওবয়েেোইবট  েেবিবয় গুরুত্বপূণস Section-গুবলো  এেটট। েে যেোেস Category অনুেোয়ী েোিোবনো থোেবে। 
+ভিজিট  Course Category, Level ও Course Name ভেবয় যেোেস খু ুঁিবে পো বেন। 
+A. Course Listing Page 
+প্রভেটট Course Card-এ থোেবে: 
+• Course Thumbnail 
+• Course Name 
+• Course Level 
+• Course Category 
+• Short Description 
+• View Details Button 
+• Apply Now Button 
+B. Course Categories 
+IT & Computer Courses 
+1. AI for Office Productivity 
+Learn how to use Artificial Intelligence tools to improve everyday office tasks and productivity. This 
+course covers AI-assisted document preparation, email writing, research, data organization, 
+meeting support, workflow automation, and other practical workplace applications. 
+2. AI for Data & Excel Mastery 
+Develop practical skills in using AI with Microsoft Excel for data organization, analysis, formulas, 
+reporting, and visualization. Learners will explore how AI can simplify complex Excel tasks and 
+improve accuracy and productivity. 
+3. AI for Presentation & Content Creation 
+Learn how to use AI tools to create professional presentations and engaging digital content. The 
+course covers AI-assisted content writing, presentation planning, visual ideas, slide creation, 
+editing, and content improvement. 
+4. Generative AI Basics & Prompt Engineering 
+Get introduced to Generative AI and learn how to communicate effectively with AI tools. The course 
+covers AI fundamentals, prompt writing techniques, ChatGPT and similar AI tools, content 
+generation, problem-solving, and practical workplace applications. 
+5. AI for Graphic Design 
+Learn how Artificial Intelligence can support modern graphic design workflows. Learners will explore 
+AI-powered design tools for generating ideas, images, layouts, visual concepts, editing, and creative 
+content while developing practical design skills. 
+6. Computer Operation – Basic to Advanced 
+Build strong computer skills from basic to advanced levels. This course covers computer 
+fundamentals, operating systems, file management, typing, Microsoft Office applications, internet 
+and email usage, digital tools, and essential workplace computing skills. 
+7. Computer Operation – Level 2 / Level 3 
+Develop competency in computer operation and office applications through structured practical 
+training. Learners will gain skills in document preparation, spreadsheets, presentations, internet 
+applications, data handling, and workplace-oriented computer tasks. 
+8. IT Support & Computer Servicing – Level 3 / Level 4 
+Learn practical IT support and computer servicing skills, including hardware components, operating 
+systems, installation, troubleshooting, maintenance, networking fundamentals, and technical 
+support. The course prepares learners for entry-level IT support and servicing roles. 
+9. Web Development – Level 3 
+Learn the fundamentals of creating functional and responsive websites. The course introduces 
+HTML, CSS, JavaScript fundamentals, web page structure, responsive design, basic development 
+practices, and practical website projects. 
+10. Web Design & Development for Freelancing – Level 2 
+Develop practical web design and development skills with a focus on freelancing. Learners will work 
+on website layouts, responsive pages, basic front-end development, client requirements, project 
+practice, and essential freelancing concepts. 
+11. Graphic Design & Freelancing 
+Develop professional graphic design skills and learn how to apply them in the freelancing 
+marketplace. The course focuses on design principles, typography, color, branding, social media 
+graphics, promotional materials, portfolio development, and basic client communication. 
+12. Graphic Design – Level 2 / Level 3 / Level 4 
+Build graphic design competencies progressively through practical training. Depending on the level, 
+learners develop skills in design fundamentals, image editing, vector graphics, layout design, 
+branding, digital graphics, and professional design projects. 
+13. Graphic Design for Freelancing – Level 3 / Level 4 
+Learn advanced graphic design skills with a strong focus on freelancing and real-world projects. 
+Learners practice creating professional design solutions, developing portfolios, understanding client 
+requirements, completing projects, and preparing for freelance work. 
+14. Digital Marketing – Level 3 / Level 4 / Level 5 
+Develop practical digital marketing skills for modern businesses and online platforms. Training 
+covers digital marketing fundamentals, social media marketing, content strategy, online promotion, 
+audience engagement, campaign planning, analytics, and advanced digital marketing practices 
+according to the level. 
+15. 2D Animation & Motion Graphics 
+Learn the fundamentals of 2D animation and motion-based visual communication. The course 
+covers animation principles, character and object movement, storyboarding, visual storytelling, basic 
+motion graphics, and practical animation projects. 
+Professional & Trainer Development 
+1. Competency-Based Assessment Methodology – Level 4 
+This course is designed for professionals who want to develop the knowledge and practical skills required 
+to conduct competency-based assessments. Learners will understand assessment planning, evidence 
+collection, assessment tools, competency judgment, assessment documentation, feedback techniques, and 
+quality assurance practices in competency-based assessment. 
+2. Competency-Based Training & Assessment Methodology – Level 4 
+This course prepares trainers and TVET professionals to design, deliver, and assess competency-based 
+training programs. It covers CBT&A principles, session planning, learning facilitation, competency-based 
+assessment, learner support, assessment documentation, moderation, validation, and continuous 
+improvement of training and assessment practices. The course emphasizes practical application and 
+professional competency in delivering quality training. 
+Who Should Join? 
+This course is suitable for trainers, instructors, assessors, teachers, TVET professionals, training 
+coordinators, and individuals interested in developing competency-based training and assessment skills for 
+professional growth. 
+Healthcare & Caregiving 
+SkillBridge IT Farm and Language Center offers practical, competency-based healthcare and caregiving 
+courses designed to prepare learners for professional caregiving and primary healthcare support roles. 
+These courses focus on essential caregiving knowledge, practical skills, safety, communication, and 
+compassionate care. 
+• Primary Health Care Services Level-2 
+This course provides practical knowledge and skills in basic healthcare services and community 
+health support. Learners will gain competency in personal hygiene, infection prevention and control, 
+first aid, basic patient care, health awareness, nutrition, vital signs monitoring, and safe healthcare 
+practices. 
+• General Caregiving Level-2 
+This course prepares learners to provide quality care and support for individuals in home and 
+healthcare settings. It covers personal care, hygiene assistance, mobility support, communication, 
+nutrition, patient safety, daily living assistance, and professional caregiving ethics. 
+• Caregiving for Elderly Persons Level-3 
+This course focuses on providing safe, respectful, and compassionate care for older adults. 
+Learners will develop skills in elderly personal care, mobility assistance, medication support, 
+nutrition, fall prevention, communication, emotional support, and promoting healthy ageing. 
+• Caregiving for Infants, Toddlers & Children Level-3 
+This course develops practical caregiving skills for infants and young children. Topics include child 
+growth and development, feeding and nutrition, hygiene, safety, first aid, play-based learning 
+support, emotional care, and creating a safe and healthy environment for children. 
+• Caregiving for Persons with Special Needs Level-3 
+This course prepares learners to support children and adults with physical, intellectual, 
+developmental, or sensory disabilities. Learners will gain practical skills in personal care, 
+communication, mobility assistance, daily living support, safety, inclusion, and providing 
+compassionate, person-centered care. 
+Who Should Join? 
+These courses are suitable for individuals interested in healthcare and caregiving careers, home 
+caregivers, support workers, community health workers, parents, and anyone who wants to develop 
+professional caregiving skills through practical, competency-based training. 
+Language Courses  
+SkillBridge IT Farm and Language Center offers practical language training for learners who want to 
+develop communication skills for higher education, international careers, and overseas employment 
+opportunities. Our courses focus on speaking, listening, reading, writing, pronunciation, and everyday 
+workplace communication. 
+• English for work 
+English for Work is designed to develop practical English communication skills for professional and 
+workplace environments. The course focuses on speaking, listening, reading, writing, workplace 
+vocabulary, professional communication, email writing, presentations, interviews, and everyday 
+office conversations. 
+Learners will gain greater confidence in communicating with colleagues, clients, and employers and 
+in handling common workplace situations effectively. 
+Improve Your English. Communicate with Confidence. 
+• Japanese Language 
+This course is designed for learners who want to study, work, or communicate in Japanese. Training 
+covers Japanese language fundamentals, conversation, grammar, vocabulary, reading, writing, 
+pronunciation, and workplace communication skills. Learners are guided according to different 
+proficiency levels. 
+• German Language 
+This course helps learners build German language skills for academic, professional, and everyday 
+communication. It includes speaking, listening, reading, writing, grammar, vocabulary, 
+pronunciation, and communication for workplace and daily life across different learning levels. 
+• Korean Language 
+This course develops practical Korean communication skills for learners interested in education, 
+professional development, or overseas employment opportunities. The course covers Korean 
+alphabet, grammar, vocabulary, conversation, listening, reading, writing, and workplace 
+communication. 
+Overseas Career & Visa Support 
+SkillBridge provides guidance and support for learners who are preparing for overseas opportunities. Our 
+support may include: 
+• Language preparation for international job and study opportunities. 
+• Guidance on preparing required documents and application processes. 
+• Basic interview preparation and communication practice. 
+• Information and assistance related to visa application procedures and required documentation 
+Important: Course Fee, Duration, Certification ও NSDA/BTEB Approval Status অেিেই যেোেসভিভিে েটিে 
+েথে ভেবয় আপবডট ে বে হবে। যেেে যেোবেস  েথে িূড়োন্ত নয়, যেগুবলো  িনে “Contact for Details”  োখো েোবে। 

@@ -1,0 +1,43 @@
+02. About Us Page (আমোদের সম্পদকে) 
+এই Page-এ  উবেিে হবে SkillBridge-এ  পভ ভিভে, লক্ষে, পভ িোলনো পদ্ধভে ও Training Environment েুবল য ো। 
+About SkillBridge 
+SkillBridge IT Farm and Language Center is a modern skill development and language training institute 
+dedicated to preparing learners for successful careers. We provide practical, competency-based, and 
+industry-relevant training designed to help learners develop the knowledge, skills, confidence, and 
+professional abilities required for today’s competitive job market. 
+Our Mission 
+Our mission is to develop a skilled and competent workforce through quality, practical, and competency
+based training. We aim to provide learners with meaningful opportunities to gain hands-on experience, 
+develop professional skills, and prepare themselves for employment, freelancing, and entrepreneurship. 
+Our Vision 
+Our vision is to support learners in building successful and sustainable careers through quality skill 
+development and continuous learning. We aspire to create a learning environment where individuals can 
+develop their potential, improve their competencies, and confidently pursue their career goals. 
+Our Objectives 
+SkillBridge focuses on developing practical skills, competency, and career readiness among learners. Our 
+objective is to bridge the gap between learning and real-world work by providing hands-on training, 
+practical assignments, project-based activities, regular feedback, and competency assessment. We also 
+aim to encourage learners to explore employment, freelancing, and entrepreneurial opportunities. 
+Training Approach 
+At SkillBridge, we follow a CBT&A (Competency-Based Training & Assessment) approach. Our training 
+goes beyond theoretical knowledge by focusing on practical skills and measurable competencies. Learners 
+participate in hands-on activities, practical tasks, projects, case studies, and assessments that help them 
+apply their knowledge in real-world situations. Our experienced trainers provide guidance, mentoring, and 
+regular feedback throughout the learning process. 
+Management / Leadership 
+SkillBridge is guided by dedicated leadership committed to quality training and learner development. The 
+Founder/Director provides strategic direction for the organization and works to establish a professional, 
+supportive, and career-focused learning environment. Through continuous improvement and learner
+centered initiatives, the leadership team aims to ensure that SkillBridge maintains high standards in training 
+and professional development. 
+Our Facilities 
+SkillBridge provides a practical and learner-friendly training environment equipped with dedicated 
+classrooms, computer labs, training resources, and relevant learning materials. Our facilities are designed 
+to support hands-on practice and competency development, allowing learners to gain practical experience 
+alongside classroom learning. 
+Our Commitment 
+At SkillBridge, we are committed to creating a supportive, inclusive, practical, and learner-focused 
+environment where every learner can develop their skills with confidence. We continuously focus on quality 
+training, practical learning, regular feedback, and career-oriented development to help learners move from 
+learning to real-world opportunity.Developer Note: About Us Page-এ Institute Profile PDF ডোউনবলোড ে ো  
+Button  োখো যেবে পোব । 

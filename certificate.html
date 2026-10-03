@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>সনদ যাচাই ও ডাউনলোড | SkillBridge - NSDA Certificate Portal</title>
+  <meta name="description" content="SkillBridge IT Farm and Language Center এবং NSDA CBT&A অ্যাসেসমেন্ট সনদ যাচাই ও সরাসরি PDF ডাউনলোড পোর্টাল।">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Fonts: Hind Siliguri (Bengali), Plus Jakarta Sans, & Cinzel/Playfair (for Certificate elegance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            bengali: ['"Hind Siliguri"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', '"Hind Siliguri"', 'sans-serif'],
+            serifCert: ['"Cinzel"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              100: '#dbeafe',
+              200: '#bfdbfe',
+              500: '#2563eb',
+              600: '#1d4ed8',
+              700: '#1e40af',
+              800: '#1e3a8a',
+              900: '#0f172a',
+            },
+            accent: {
+              emerald: '#059669',
+              amber: '#d97706',
+              rose: '#e11d48',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', 'Hind Siliguri', sans-serif;
+    }
+    .font-bn {
+      font-family: 'Hind Siliguri', sans-serif;
+    }
+    .bg-dot-pattern {
+      background-image: radial-gradient(rgba(37, 99, 235, 0.12) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    
+    /* Certificate Border & Watermark styling */
+    .certificate-border {
+      background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+      border: 12px double #1e3a8a;
+      box-shadow: 0 0 0 4px #d97706, 0 20px 40px -15px rgba(0,0,0,0.3);
+    }
+    .cert-corner {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border: 3px solid #d97706;
+    }
+    .cert-corner-tl { top: 8px; left: 8px; border-right: none; border-bottom: none; }
+    .cert-corner-tr { top: 8px; right: 8px; border-left: none; border-bottom: none; }
+    .cert-corner-bl { bottom: 8px; left: 8px; border-right: none; border-top: none; }
+    .cert-corner-br { bottom: 8px; right: 8px; border-left: none; border-top: none; }
+
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      #printableCertificate, #printableCertificate * {
+        visibility: visible;
+      }
+      #printableCertificate {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 20px;
+        box-shadow: none;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-600 selection:text-white">
+
+  <!-- ==========================================
+       TOP ANNOUNCEMENT BAR
+  =========================================== -->
+  <div class="bg-gradient-to-r from-brand-900 via-brand-800 to-indigo-950 text-slate-100 py-2 px-4 text-xs font-medium border-b border-brand-700/50">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2 text-center md:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+          অনলাইন ভেরিফিকেশন
+        </span>
+        <span class="font-bn">National Skills Portal (NSP) ও SkillBridge সনদ যাচাই এবং ডাউনলোড ব্যবস্থা</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs text-slate-300">
+        <a href="https://skillsportal.gov.bd" target="_blank" class="hover:text-amber-300 transition flex items-center gap-1.5 font-bn">
+          <i class="fa-solid fa-arrow-up-right-from-square text-amber-400"></i> skillsportal.gov.bd
+        </a>
+        <span class="text-slate-600 hidden sm:inline">|</span>
+        <span class="hidden sm:flex items-center gap-1 text-emerald-300 font-semibold">
+          <i class="fa-solid fa-shield-halved"></i> NSDA Regulated TCI
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       STICKY MAIN NAVIGATION BAR
+  =========================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-4">
+        
+        <!-- Brand Logo & Identity -->
+        <a href="index.html" class="flex items-center gap-3 group shrink-0">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-700 to-blue-500 text-white flex items-center justify-center font-bold text-2xl shadow-md group-hover:scale-105 transition-transform duration-300">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900">
+                Skill<span class="text-brand-600">Bridge</span>
+              </span>
+              <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-blue-100 text-brand-700 border border-blue-200">
+                NSDA
+              </span>
+            </div>
+            <p class="text-[11px] font-medium text-slate-500 tracking-wide font-bn">IT Farm & Language Center</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-semibold text-slate-700 font-bn">
+          <a href="index.html" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">হোম</a>
+          <a href="about.html" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">আমাদের পরিচিতি</a>
+          
+          <!-- Courses Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none">
+              <span>কোর্সসমূহ</span>
+              <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform duration-200"></i>
+            </button>
+            <div class="absolute top-full left-0 pt-2 w-60 hidden group-hover:block z-50">
+              <div class="bg-white rounded-2xl shadow-xl border border-slate-150 p-2 space-y-1">
+                <a href="index.html#courses" class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">
+                  <span class="w-7 h-7 rounded-lg bg-blue-100 text-brand-600 flex items-center justify-center text-xs"><i class="fa-solid fa-laptop-code"></i></span>
+                  <div>
+                    <p class="text-slate-900 font-bold">IT & Computer</p>
+                    <span class="text-[10px] text-slate-400">Web, AI, Office & Networking</span>
+                  </div>
+                </a>
+                <a href="index.html#courses" class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 hover:bg-purple-50 hover:text-purple-600 transition">
+                  <span class="w-7 h-7 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center text-xs"><i class="fa-solid fa-palette"></i></span>
+                  <div>
+                    <p class="text-slate-900 font-bold">Graphic & UI/UX</p>
+                    <span class="text-[10px] text-slate-400">Photoshop, Figma, 2D Motion</span>
+                  </div>
+                </a>
+                <a href="index.html#languages" class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 transition">
+                  <span class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs"><i class="fa-solid fa-language"></i></span>
+                  <div>
+                    <p class="text-slate-900 font-bold">ভাষা শিক্ষা কোর্স</p>
+                    <span class="text-[10px] text-slate-400">English, Japanese, German, Korean</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="index.html#assessment" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">NSDA অ্যাসেসমেন্ট</a>
+          <a href="certificate.html" class="px-3.5 py-2 rounded-xl text-brand-600 bg-brand-50 font-bold transition">সনদ যাচাই ও ডাউনলোড</a>
+          <a href="index.html#batches" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">আপকামিং ব্যাচ</a>
+        </nav>
+
+        <!-- Right Action Buttons -->
+        <div class="hidden sm:flex items-center gap-3 shrink-0">
+          <a href="#verifyBox" class="px-3.5 py-2.5 text-xs font-bold rounded-xl border border-brand-200 text-brand-700 hover:bg-brand-50 transition font-bn flex items-center gap-1.5">
+            <i class="fa-solid fa-qrcode text-brand-600"></i>
+            <span>দ্রুত যাচাই</span>
+          </a>
+          <button onclick="openApplyModal()" class="px-5 py-2.5 text-xs lg:text-sm font-bold rounded-xl bg-gradient-to-r from-brand-600 to-blue-600 text-white shadow-md shadow-blue-500/25 hover:from-brand-700 hover:to-blue-700 hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2 font-bn">
+            <span>ভর্তি আবেদন</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="lg:hidden flex items-center gap-2">
+          <button onclick="openApplyModal()" class="sm:hidden px-3 py-1.5 text-xs font-bold rounded-lg bg-brand-600 text-white font-bn">
+            ভর্তি
+          </button>
+          <button id="mobileMenuBtn" aria-label="Toggle Navigation" class="w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 hover:text-brand-600 focus:outline-none">
+            <i class="fa-solid fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Nav -->
+    <div id="mobileMenu" class="hidden lg:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-2 shadow-xl">
+      <a href="index.html" class="mobile-link block px-3 py-2.5 rounded-lg text-slate-700 font-medium hover:bg-slate-100 font-bn">হোম (Home)</a>
+      <a href="about.html" class="mobile-link block px-3 py-2.5 rounded-lg text-slate-700 font-medium hover:bg-slate-100 font-bn">আমাদের পরিচিতি (About)</a>
+      <a href="index.html#courses" class="mobile-link block px-3 py-2.5 rounded-lg text-slate-700 font-medium hover:bg-slate-100 font-bn">কোর্সসমূহ (Courses)</a>
+      <a href="certificate.html" class="mobile-link block px-3 py-2.5 rounded-lg text-brand-600 font-bold bg-brand-50 font-bn">সনদ যাচাই ও ডাউনলোড (Certificates)</a>
+      <a href="index.html#assessment" class="mobile-link block px-3 py-2.5 rounded-lg text-slate-700 font-medium hover:bg-slate-100 font-bn">NSDA Regular / RPL অ্যাসেসমেন্ট</a>
+      <a href="index.html#batches" class="mobile-link block px-3 py-2.5 rounded-lg text-slate-700 font-medium hover:bg-slate-100 font-bn">আপকামিং ব্যাচ</a>
+      <div class="pt-3 border-t border-slate-200">
+        <button onclick="openApplyModal()" class="w-full py-2.5 rounded-xl bg-brand-600 text-white font-bold text-center font-bn">
+          অনলাইন ভর্তি আবেদন
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO & PORTAL HEADER (Inspired by skillsportal.gov.bd)
+  =========================================== -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-brand-950 via-slate-900 to-indigo-950 text-white py-14 lg:py-18 bg-dot-pattern">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <div class="lg:col-span-8 space-y-4 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-semibold">
+            <i class="fa-solid fa-certificate"></i>
+            <span>TCI Shared Certificate Verification & Download Portal</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-tight">
+            সনদপত্র যাচাই ও ডিজিটাল কপি ডাউনলোড
+          </h1>
+
+          <p class="text-sm sm:text-base text-slate-300 leading-relaxed font-bn max-w-2xl">
+            SkillBridge IT Farm and Language Center এবং জাতীয় দক্ষতা উন্নয়ন কর্তৃপক্ষ (NSDA) অনুসৃত CBT&A / RPL অ্যাসেসমেন্টে উত্তীর্ণ শিক্ষার্থীদের সার্টিফিকেট যাচাই ও ডাউনলোড পোর্টাল।
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2 text-xs text-slate-400">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> তাৎক্ষণিক অনলাইন যাচাই</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> হাই-রেজুলেশন প্রিন্ট কপি</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-emerald-400"></i> কিউআর কোড সিকিউরিটি</span>
+          </div>
+        </div>
+
+        <!-- Quick Search Stats / Portal Sync Card -->
+        <div class="lg:col-span-4">
+          <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6 border border-white/15 shadow-xl text-center space-y-4">
+            <div class="w-14 h-14 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mx-auto border border-amber-500/30">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-white">NSP সেন্ট্রাল ডাটাবেজ লিঙ্কড</h3>
+              <p class="text-xs text-slate-300 font-bn mt-1">জাতীয় দক্ষতা পোর্টাল (skillsportal.gov.bd) এর TCI সার্টিফাইড রেজিস্টার তালিকা।</p>
+            </div>
+            <div class="grid grid-cols-2 gap-3 text-left pt-2 border-t border-white/10 font-bn">
+              <div class="p-2.5 rounded-xl bg-white/5">
+                <span class="text-lg font-extrabold text-emerald-400 block">১,২৪০+</span>
+                <span class="text-[11px] text-slate-400">ইস্যুকৃত সনদ</span>
+              </div>
+              <div class="p-2.5 rounded-xl bg-white/5">
+                <span class="text-lg font-extrabold text-blue-400 block">১০০%</span>
+                <span class="text-[11px] text-slate-400">অ্যাসেসড স্ট্যান্ডার্ড</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 1: CERTIFICATE SEARCH & VERIFICATION BOX
+  =========================================== -->
+  <section id="verifyBox" class="py-10 bg-slate-100 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-white rounded-3xl shadow-lg border border-slate-200 p-6 sm:p-8 -mt-16 relative z-20">
+        
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-slate-100">
+          <div>
+            <h2 class="text-xl sm:text-2xl font-black text-slate-900 flex items-center gap-2">
+              <i class="fa-solid fa-magnifying-glass text-brand-600"></i>
+              <span>সার্টিফিকেট সার্চ ও ভেরিফিকেশন (Certificate Search)</span>
+            </h2>
+            <p class="text-xs sm:text-sm text-slate-500 font-bn mt-1">
+              সার্টিফিকেট নম্বর, রেজিস্ট্রেশন নম্বর, এনআইডি (NID) অথবা মোবাইল নম্বর দিয়ে সার্টিফিকেট খুঁজুন ও সরাসরি ডাউনলোড করুন।
+            </p>
+          </div>
+
+          <!-- Quick Test Tags -->
+          <div class="flex flex-wrap items-center gap-1.5 text-xs font-bn">
+            <span class="text-slate-400 font-medium">ডেমো সার্চ:</span>
+            <button onclick="fillAndSearch('SB-2026-WD-1082')" class="px-2.5 py-1 rounded-lg bg-blue-50 hover:bg-blue-100 text-brand-700 font-mono text-[11px] font-bold border border-blue-200">
+              SB-2026-WD-1082
+            </button>
+            <button onclick="fillAndSearch('SB-2026-GD-1095')" class="px-2.5 py-1 rounded-lg bg-purple-50 hover:bg-purple-100 text-purple-700 font-mono text-[11px] font-bold border border-purple-200">
+              SB-2026-GD-1095
+            </button>
+            <button onclick="fillAndSearch('SB-2026-CG-1011')" class="px-2.5 py-1 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-mono text-[11px] font-bold border border-emerald-200">
+              SB-2026-CG-1011
+            </button>
+          </div>
+        </div>
+
+        <!-- Search Form -->
+        <form onsubmit="handleSearch(event)" class="grid grid-cols-1 md:grid-cols-12 gap-4 items-end font-bn">
+          
+          <div class="md:col-span-5">
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">
+              সার্টিফিকেট নং / রেজিস্ট্রেশন নং / NID *
+            </label>
+            <div class="relative">
+              <i class="fa-solid fa-id-card absolute left-3.5 top-3.5 text-slate-400 text-sm"></i>
+              <input type="text" id="searchInput" required placeholder="যেমন: SB-2026-WD-1082 বা রেজিস্ট্রেশন নং" class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-800 text-sm">
+            </div>
+          </div>
+
+          <div class="md:col-span-4">
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1.5">
+              কোর্স / অকুপেশন ট্রেড
+            </label>
+            <select id="tradeFilter" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-800 text-sm font-medium">
+              <option value="all">সকল অকুপেশন ও কোর্স</option>
+              <option value="Web Development">Web Development (Level 3/4)</option>
+              <option value="Graphic Design">Graphic Design & Freelancing</option>
+              <option value="IT Support">IT Support & Computer Servicing</option>
+              <option value="Digital Marketing">Digital Marketing & SEO</option>
+              <option value="General Caregiving">General Caregiving Level-2</option>
+              <option value="Elderly Caregiving">Caregiving for Elderly Persons Level-3</option>
+              <option value="Computer Operation">Computer Operation Basic to Advanced</option>
+              <option value="Japanese Language">Japanese Language (JLPT/NAT N5)</option>
+            </select>
+          </div>
+
+          <div class="md:col-span-3 flex gap-2">
+            <button type="submit" class="w-full py-2.5 px-5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-extrabold text-sm shadow-md shadow-brand-500/30 transition flex items-center justify-center gap-2">
+              <i class="fa-solid fa-search"></i>
+              <span>সার্চ ও ভেরিফাই</span>
+            </button>
+            <button type="button" onclick="resetSearch()" title="রিসেট" class="px-3.5 py-2.5 rounded-xl border border-slate-300 text-slate-600 hover:bg-slate-100 transition">
+              <i class="fa-solid fa-rotate-left"></i>
+            </button>
+          </div>
+
+        </form>
+
+        <!-- Live Search Result Alert / Feedback Area -->
+        <div id="searchFeedback" class="hidden mt-4 p-4 rounded-2xl"></div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 2: TCI SHARED LIST TABLE (skillsportal.gov.bd layout)
+  =========================================== -->
+  <section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title & Meta -->
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span class="text-xs uppercase tracking-wider font-extrabold text-slate-400">TCI Verified Roster</span>
+          </div>
+          <h2 class="text-2xl font-black text-slate-900 tracking-tight mt-1">
+            সার্টিফাইড শিক্ষার্থীদের তালিকা (Shared Certified List)
+          </h2>
+          <p class="text-xs text-slate-500 font-bn mt-0.5">
+            নিচে উত্তীর্ণ শিক্ষার্থীদের সাম্প্রতিক তালিকার বিবরণ দেওয়া হলো। যেকোনো সনদের ডিজিটাল কপি দেখতে বা প্রিন্ট করতে ডানপাশের অ্যাকশন বাটনে ক্লিক করুন।
+          </p>
+        </div>
+
+        <!-- Quick Records Count -->
+        <div class="flex items-center gap-2 text-xs font-semibold text-slate-600 bg-slate-100 px-4 py-2 rounded-xl self-start sm:self-auto font-bn">
+          <i class="fa-solid fa-table-list text-brand-600"></i>
+          <span>মোট রেকর্ড প্রদর্শিত: <strong id="recordCount" class="text-slate-900">৬</strong> টি</span>
+        </div>
+      </div>
+
+      <!-- Table Container -->
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-sm text-slate-700">
+            <thead class="bg-slate-900 text-white text-xs uppercase tracking-wider font-bold">
+              <tr>
+                <th class="px-5 py-3.5">SL</th>
+                <th class="px-5 py-3.5">শিক্ষার্থীর নাম ও আইডি</th>
+                <th class="px-5 py-3.5">সার্টিফিকেট নং</th>
+                <th class="px-5 py-3.5">কোর্স / অকুপেশন ও লেভেল</th>
+                <th class="px-5 py-3.5">অ্যাসেসমেন্ট ফলাফল</th>
+                <th class="px-5 py-3.5">ইস্যুর তারিখ</th>
+                <th class="px-5 py-3.5 text-center">অ্যাকশন</th>
+              </tr>
+            </thead>
+            <tbody id="certificateTableBody" class="divide-y divide-slate-100 font-medium">
+              <!-- Dynamically populated via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Table Footer / Pagination Notice -->
+        <div class="p-4 bg-slate-50 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 font-bn">
+          <div>
+            <span>* এই তালিকাটি সরাসরি জাতীয় দক্ষতা পোর্টাল (NSP) প্রটোকল অনুযায়ী প্রস্তুতকৃত।</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="px-3 py-1 rounded bg-white border border-slate-200 font-semibold text-slate-700">পৃষ্ঠা ১ এর ১</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 3: HOW TO VERIFY & DOWNLOAD INSTRUCTIONS
+  =========================================== -->
+  <section class="py-14 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-blue-100 text-brand-700 mb-2">
+          User Guide
+        </span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+          সনদপত্র যাচাই ও ডাউনলোড করার নিয়মাবলী
+        </h3>
+        <p class="text-sm text-slate-600 mt-2 font-bn">
+          সহজ ৩টি ধাপে আপনার বা প্রার্থীর দক্ষতা সনদের সত্যতা নিশ্চিত করুন।
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 font-bn">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
+          <div class="w-12 h-12 rounded-2xl bg-blue-100 text-brand-600 flex items-center justify-center text-xl font-bold mx-auto mb-4">
+            ১
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mb-2">সার্চ বক্সে তথ্য প্রদান</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            প্রার্থীর সনদপত্রে উল্লেখিত Certificate No. (যেমন: SB-2026-WD-1082) অথবা এনআইডি নম্বরটি সার্চ বক্সে লিখুন।
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl font-bold mx-auto mb-4">
+            ২
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mb-2">অনলাইন ভেরিফিকেশন ও ফলাফল</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            সার্চ বাটনে ক্লিক করলেই ডাটাবেজ থেকে প্রার্থীর নাম, ট্রেড, লেভেল ও কম্পিটেন্সি স্ট্যাটাস স্ক্রিনে প্রদর্শিত হবে।
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm text-center">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl font-bold mx-auto mb-4">
+            ৩
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mb-2">সনদ প্রিভিউ ও PDF প্রিন্ট</h4>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            ‘View Certificate’ এ ক্লিক করে ডিজিটাল অফিশিয়াল সার্টিফিকেট দেখুন এবং সরাসরি PDF হিসেবে ডাউনলোড বা প্রিন্ট করুন।
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       MODAL: FULL OFFICIAL CERTIFICATE PREVIEW & PRINT
+  =========================================== -->
+  <div id="certificateModal" class="fixed inset-0 z-50 hidden bg-slate-950/80 backdrop-blur-sm flex items-center justify-center p-3 sm:p-6 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-4xl w-full p-4 sm:p-8 shadow-2xl relative my-auto max-h-[95vh] overflow-y-auto">
+      
+      <!-- Top Action Bar in Modal (Close, Print, Download) -->
+      <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-200 no-print">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-emerald-500"></span>
+          <span class="text-xs sm:text-sm font-bold text-slate-900 font-bn">অফিশিয়াল কম্পিটেন্সি সার্টিফিকেট ভিউয়ার</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="window.print()" class="px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
+            <i class="fa-solid fa-print"></i>
+            <span>প্রিন্ট / PDF</span>
+          </button>
+          <button onclick="closeCertificateModal()" class="w-9 h-9 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition">
+            <i class="fa-solid fa-xmark text-lg"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Certificate Canvas -->
+      <div id="printableCertificate" class="certificate-border relative p-8 sm:p-12 text-slate-900 bg-white">
+        
+        <!-- Ornate Corners -->
+        <div class="cert-corner cert-corner-tl"></div>
+        <div class="cert-corner cert-corner-tr"></div>
+        <div class="cert-corner cert-corner-bl"></div>
+        <div class="cert-corner cert-corner-br"></div>
+
+        <!-- Watermark -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.04]">
+          <i class="fa-solid fa-graduation-cap text-[320px]"></i>
+        </div>
+
+        <!-- Certificate Header -->
+        <div class="relative z-10 text-center space-y-3">
+          
+          <div class="flex items-center justify-between mb-4">
+            <div class="text-left">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">TCI Code: SB-BD-2026</span>
+              <span class="text-xs font-bold text-slate-700">NSDA Accreditation: Level 1-4</span>
+            </div>
+            
+            <div class="flex items-center gap-2">
+              <div class="w-12 h-12 rounded-xl bg-brand-700 text-white flex items-center justify-center text-2xl font-black shadow">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="text-left">
+                <h4 class="text-base font-black text-slate-900 tracking-tight leading-none">SkillBridge</h4>
+                <p class="text-[9px] uppercase font-bold text-brand-600 tracking-wider">IT Farm & Language Center</p>
+              </div>
+            </div>
+
+            <div class="text-right">
+              <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">Certificate No:</span>
+              <span id="certModalId" class="text-xs font-mono font-bold text-brand-700">SB-2026-WD-1082</span>
+            </div>
+          </div>
+
+          <h2 class="text-2xl sm:text-4xl font-extrabold tracking-wider font-serifCert uppercase text-slate-900 pt-2">
+            Certificate of Competency
+          </h2>
+          <p class="text-xs font-bold text-amber-600 uppercase tracking-widest">
+            National Skills Development Authority (NSDA) Standard
+          </p>
+
+          <p class="text-xs text-slate-500 font-bn pt-2">
+            এই মর্মে প্রত্যয়ন করা যাচ্ছে যে, সফলভাবে প্রশিক্ষণ ও কম্পিটেন্সি অ্যাসেসমেন্ট সম্পন্ন করেছেন:
+          </p>
+
+          <!-- Candidate Name -->
+          <div class="py-2">
+            <h3 id="certModalName" class="text-2xl sm:text-3xl font-black text-brand-800 tracking-wide border-b-2 border-slate-300 inline-block px-8 pb-1">
+              Mohammad Rakibul Hasan
+            </h3>
+            <p id="certModalFather" class="text-xs text-slate-500 font-bn mt-1.5">
+              পিতা/মাতা: Md. Rafiqul Islam | রেজিস্ট্রেশন নং: REG-2026-8801
+            </p>
+          </div>
+
+          <!-- Course & Competency Statement -->
+          <div class="max-w-2xl mx-auto space-y-2 text-sm text-slate-700 font-bn pt-2">
+            <p>
+              তিনি <strong>SkillBridge IT Farm and Language Center</strong> কর্তৃক আয়োজিত
+            </p>
+            <div class="p-3 bg-blue-50/70 border border-blue-200/80 rounded-xl inline-block px-6">
+              <span class="text-xs font-bold uppercase text-brand-600 block">Occupation / Qualification:</span>
+              <h4 id="certModalCourse" class="text-base sm:text-lg font-bold text-slate-900">
+                Full-Stack Web Development & Laravel (Level-3)
+              </h4>
+            </div>
+            <p class="text-xs text-slate-600 pt-1">
+              কোর্সের সকল তাত্ত্বিক ও ব্যবহারিক মূল্যায়ন সাফল্যের সাথে উত্তীর্ণ হয়ে 
+              <span class="inline-block px-2.5 py-0.5 rounded bg-emerald-100 text-emerald-800 font-bold text-xs uppercase border border-emerald-300">
+                COMPETENT (যোগ্য/উত্তীর্ণ)
+              </span> 
+              হিসেবে স্বীকৃতি অর্জন করেছেন।
+            </p>
+          </div>
+
+          <!-- Certificate Footer (Signatures & Verification QR) -->
+          <div class="pt-10 mt-6 border-t border-slate-200 grid grid-cols-3 items-end text-center">
+            
+            <!-- Assessor Signature -->
+            <div class="space-y-1">
+              <div class="h-10 flex items-center justify-center">
+                <span class="font-serif italic font-bold text-slate-600 text-lg">Md. Assessor</span>
+              </div>
+              <div class="w-32 h-0.5 bg-slate-400 mx-auto"></div>
+              <p class="text-[11px] font-bold text-slate-800 font-bn">NSDA সার্টিফাইড অ্যাসেসর</p>
+              <p class="text-[9px] text-slate-400">Lead Competency Assessor</p>
+            </div>
+
+            <!-- Official Seal & QR -->
+            <div class="flex flex-col items-center justify-center space-y-1">
+              <div class="w-16 h-16 p-1 bg-white border border-slate-300 rounded-lg shadow-sm flex items-center justify-center">
+                <i class="fa-solid fa-qrcode text-3xl text-slate-800"></i>
+              </div>
+              <span class="text-[9px] font-mono text-slate-500 font-bold">Verified on Portal</span>
+              <span id="certModalDate" class="text-[10px] font-semibold text-slate-700">১৫ মার্চ ২০২৬</span>
+            </div>
+
+            <!-- Director Signature -->
+            <div class="space-y-1">
+              <div class="h-10 flex items-center justify-center">
+                <span class="font-serif italic font-bold text-slate-800 text-lg">Director Seal</span>
+              </div>
+              <div class="w-32 h-0.5 bg-slate-400 mx-auto"></div>
+              <p class="text-[11px] font-bold text-slate-800 font-bn">পরিচালক ও কেন্দ্র প্রধান</p>
+              <p class="text-[9px] text-slate-400">SkillBridge Center Director</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Bottom Close Button in Modal -->
+      <div class="mt-6 flex justify-end gap-3 no-print">
+        <button onclick="closeCertificateModal()" class="px-5 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold text-xs hover:bg-slate-100 transition font-bn">
+          বন্ধ করুন
+        </button>
+        <button onclick="window.print()" class="px-6 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs shadow-md transition font-bn flex items-center gap-1.5">
+          <i class="fa-solid fa-download"></i>
+          <span>ডাউনলোড বা প্রিন্ট করুন</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL: ADMISSION / APPLY NOW
+  =========================================== -->
+  <div id="applyModal" class="fixed inset-0 z-50 hidden bg-slate-950/70 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeApplyModal()" class="absolute top-5 right-5 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="mb-6">
+        <span class="px-3 py-1 rounded-full bg-blue-100 text-brand-700 text-xs font-bold uppercase tracking-wider">Online Admission</span>
+        <h3 class="text-2xl font-black text-slate-900 mt-2 font-bn">ভর্তি আবেদন ফর্ম</h3>
+        <p class="text-xs text-slate-500 font-bn mt-1">আপনার প্রয়োজনীয় তথ্য দিয়ে ফর্মটি পূরণ করুন, আমাদের প্রতিনিধি অতিশীঘ্রই যোগাযোগ করবেন।</p>
+      </div>
+
+      <form onsubmit="handleApplySubmit(event)" class="space-y-4 text-sm font-bn">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">পূর্ণ নাম *</label>
+          <input type="text" id="studentName" required placeholder="আপনার পুরো নাম" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-800">
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">মোবাইল নম্বর *</label>
+            <input type="tel" id="studentPhone" required placeholder="017XXXXXXXX" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-800">
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">ইমেইল এড্রেস</label>
+            <input type="email" id="studentEmail" placeholder="email@example.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-800">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase tracking-wide mb-1">আগ্রহী কোর্স নির্বাচন করুন *</label>
+          <select id="courseSelect" required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-slate-800 font-medium">
+            <option value="Full-Stack Web Development">Full-Stack Web Development & Laravel</option>
+            <option value="Graphic Design">Graphic Design & Freelancing</option>
+            <option value="AI for Office Productivity">AI for Office Productivity</option>
+            <option value="IT Support Service">IT Support & Computer Servicing</option>
+            <option value="General Caregiving">General Caregiving Level-2</option>
+            <option value="Japanese Language">Japanese Language (JLPT/NAT N5)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-xl bg-gradient-to-r from-brand-600 to-blue-600 hover:from-brand-700 hover:to-blue-700 text-white font-extrabold text-sm shadow-lg transition">
+          আবেদন নিশ্চিত করুন
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FOOTER
+  =========================================== -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-8 border-t border-slate-800 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 mb-12">
+        <div class="lg:col-span-4 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-blue-500 text-white flex items-center justify-center font-bold text-xl">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div>
+              <span class="text-xl font-black text-white tracking-tight">
+                Skill<span class="text-brand-500">Bridge</span>
+              </span>
+              <p class="text-[11px] text-slate-400 font-bn">IT Farm and Language Center</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed font-bn">
+            SkillBridge IT Farm and Language Center একটি আধুনিক দক্ষতা উন্নয়ন ও ভাষা প্রশিক্ষণ কেন্দ্র। জাতীয় দক্ষতা উন্নয়ন কর্তৃপক্ষ (NSDA) এর কারিকুলাম অনুযায়ী পরিচালিত।
+          </p>
+          <div class="p-3 rounded-xl bg-slate-900 border border-slate-800 text-xs font-bn text-amber-400">
+            <i class="fa-solid fa-link mr-1"></i> সেন্ট্রাল পোর্টাল: <a href="https://skillsportal.gov.bd" target="_blank" class="underline">skillsportal.gov.bd</a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 space-y-3 font-bn">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">দ্রুত লিংক</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li><a href="index.html" class="hover:text-white transition">হোম পেজ</a></li>
+            <li><a href="about.html" class="hover:text-white transition">আমাদের পরিচিতি</a></li>
+            <li><a href="index.html#courses" class="hover:text-white transition">কোর্সসমূহ</a></li>
+            <li><a href="certificate.html" class="hover:text-white transition text-brand-400 font-bold">সনদ যাচাই ও ডাউনলোড</a></li>
+            <li><a href="index.html#assessment" class="hover:text-white transition">NSDA CBT&A মূল্যায়ন</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-5 space-y-3 font-bn">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">হেল্পডেস্ক ও ভেরিফিকেশন সহায়তা</h4>
+          <p class="text-xs text-slate-400">
+            সনদপত্র যাচাই বা ডাউনলোডে কোনো সমস্যা হলে সরাসরি আমাদের সাপোর্ট হেল্পলাইনে যোগাযোগ করতে পারেন।
+          </p>
+          <div class="space-y-2 text-xs text-slate-300 pt-2">
+            <p><i class="fa-solid fa-phone text-emerald-400 mr-2"></i> +880 1700-000000</p>
+            <p><i class="fa-solid fa-envelope text-blue-400 mr-2"></i> verify@skillbridge.edu.bd</p>
+            <p><i class="fa-solid fa-location-dot text-amber-400 mr-2"></i> স্কিলব্রিজ ক্যাম্পাস, বাংলাদেশ</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-slate-900 text-center sm:flex sm:justify-between text-xs text-slate-500 font-bn">
+        <p>© 2026 SkillBridge IT Farm and Language Center. All Rights Reserved.</p>
+        <p>National Skills Portal (NSP) Standard Certified System</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       JAVASCRIPT: DATA & INTERACTION LOGIC
+  =========================================== -->
+  <script>
+    // Sample Certificate Database (Reflecting courses from Course/course.txt and NSDA standards)
+    const certificateDatabase = [
+      {
+        certNo: "SB-2026-WD-1082",
+        regNo: "REG-2026-8801",
+        nid: "19951234567890",
+        name: "Mohammad Rakibul Hasan",
+        father: "Md. Rafiqul Islam",
+        trade: "Web Development",
+        courseTitle: "Full-Stack Web Development & Laravel (Level-3)",
+        level: "Level 3",
+        center: "SkillBridge IT Farm & Training Center",
+        result: "Competent",
+        issueDate: "১৫ মার্চ ২০২৬",
+        session: "জানুয়ারি-মার্চ ২০২৬"
+      },
+      {
+        certNo: "SB-2026-GD-1095",
+        regNo: "REG-2026-8842",
+        nid: "19982345678901",
+        name: "Nusrat Jahan Mim",
+        father: "Md. Jahangir Alam",
+        trade: "Graphic Design",
+        courseTitle: "Graphic Design & Freelancing Mastery (Level-3)",
+        level: "Level 3",
+        center: "SkillBridge IT Farm & Training Center",
+        result: "Competent",
+        issueDate: "১০ ফেব্রুয়ারি ২০২৬",
+        session: "নভেম্বর-ফেব্রুয়ারি ২০২৬"
+      },
+      {
+        certNo: "SB-2026-CG-1011",
+        regNo: "REG-2026-7731",
+        nid: "19923456789012",
+        name: "Farhana Akter Rina",
+        father: "Abdul Motin",
+        trade: "General Caregiving",
+        courseTitle: "General Caregiving & Healthcare Support (Level-2)",
+        level: "Level 2",
+        center: "SkillBridge Healthcare & Caregiving Center",
+        result: "Competent",
+        issueDate: "২২ জানুয়ারি ২০২৬",
+        session: "অক্টোবর-জানুয়ারি ২০২৬"
+      },
+      {
+        certNo: "SB-2026-IT-1043",
+        regNo: "REG-2026-8910",
+        nid: "19974567890123",
+        name: "Tanvir Ahmed Chowdhury",
+        father: "Kabir Chowdhury",
+        trade: "IT Support",
+        courseTitle: "IT Support & Computer Servicing (Level-3)",
+        level: "Level 3",
+        center: "SkillBridge IT Farm & Training Center",
+        result: "Competent",
+        issueDate: "০৫ মার্চ ২০২৬",
+        session: "ডিসেম্বর-মার্চ ২০২৬"
+      },
+      {
+        certNo: "SB-2026-AI-1055",
+        regNo: "REG-2026-9021",
+        nid: "19995678901234",
+        name: "Sadia Rahman Shanto",
+        father: "Mustafizur Rahman",
+        trade: "Computer Operation",
+        courseTitle: "AI for Office Productivity & Data Mastery",
+        level: "Professional",
+        center: "SkillBridge IT Farm & Training Center",
+        result: "Competent",
+        issueDate: "১২ ফেব্রুয়ারি ২০২৬",
+        session: "জানুয়ারি-ফেব্রুয়ারি ২০২৬"
+      },
+      {
+        certNo: "SB-2026-JP-1030",
+        regNo: "REG-2026-6644",
+        nid: "20006789012345",
+        name: "Arifur Rahman Rony",
+        father: "Md. Khalilur Rahman",
+        trade: "Japanese Language",
+        courseTitle: "Japanese Language Proficiency (JLPT / NAT N5)",
+        level: "N5 Standard",
+        center: "SkillBridge Language Training Center",
+        result: "Competent",
+        issueDate: "১৮ মার্চ ২০২৬",
+        session: "ডিসেম্বর-মার্চ ২০২৬"
+      }
+    ];
+
+    // Render Table Rows
+    function renderCertificateTable(items) {
+      const tbody = document.getElementById('certificateTableBody');
+      const countEl = document.getElementById('recordCount');
+      tbody.innerHTML = '';
+      countEl.innerText = items.length;
+
+      if (items.length === 0) {
+        tbody.innerHTML = `
+          <tr>
+            <td colspan="7" class="px-6 py-8 text-center text-slate-400 font-bn">
+              <i class="fa-solid fa-triangle-exclamation text-amber-500 text-2xl mb-2 block"></i>
+              আপনার সার্চ অনুযায়ী কোনো রেকর্ড পাওয়া যায়নি। সঠিক সার্টিফিকেট বা রেজিস্ট্রেশন নম্বর লিখে পুনরায় চেষ্টা করুন।
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      items.forEach((item, index) => {
+        const row = document.createElement('tr');
+        row.className = "hover:bg-blue-50/40 transition duration-150";
+        row.innerHTML = `
+          <td class="px-5 py-4 font-mono font-bold text-slate-500">${index + 1}</td>
+          <td class="px-5 py-4">
+            <div class="font-bold text-slate-900">${item.name}</div>
+            <div class="text-[11px] text-slate-400 font-mono font-medium">${item.regNo}</div>
+          </td>
+          <td class="px-5 py-4">
+            <span class="px-2.5 py-1 rounded bg-slate-100 text-brand-700 font-mono text-xs font-bold border border-slate-200">
+              ${item.certNo}
+            </span>
+          </td>
+          <td class="px-5 py-4">
+            <div class="font-semibold text-slate-800 text-xs">${item.courseTitle}</div>
+            <span class="inline-block text-[10px] text-slate-400 font-bn">${item.center}</span>
+          </td>
+          <td class="px-5 py-4">
+            <span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 border border-emerald-300">
+              <i class="fa-solid fa-circle-check text-[10px]"></i>
+              <span>${item.result} (উত্তীর্ণ)</span>
+            </span>
+          </td>
+          <td class="px-5 py-4 text-xs font-bold text-slate-600">${item.issueDate}</td>
+          <td class="px-5 py-4 text-center">
+            <div class="flex items-center justify-center gap-1.5">
+              <button onclick="viewCertificate('${item.certNo}')" title="সার্টিফিকেট দেখুন" class="px-3 py-1.5 rounded-xl bg-blue-50 hover:bg-brand-600 hover:text-white text-brand-700 text-xs font-bold transition flex items-center gap-1 shadow-sm">
+                <i class="fa-solid fa-eye text-xs"></i>
+                <span class="hidden sm:inline">View</span>
+              </button>
+              <button onclick="downloadCertificateDirect('${item.certNo}')" title="ডাউনলোড" class="px-3 py-1.5 rounded-xl bg-emerald-50 hover:bg-emerald-600 hover:text-white text-emerald-700 text-xs font-bold transition flex items-center gap-1 shadow-sm">
+                <i class="fa-solid fa-download text-xs"></i>
+                <span class="hidden sm:inline">PDF</span>
+              </button>
+            </div>
+          </td>
+        `;
+        tbody.appendChild(row);
+      });
+    }
+
+    // Search and Verification logic
+    function handleSearch(e) {
+      if (e) e.preventDefault();
+      const query = document.getElementById('searchInput').value.trim().toLowerCase();
+      const trade = document.getElementById('tradeFilter').value;
+      const feedback = document.getElementById('searchFeedback');
+
+      const filtered = certificateDatabase.filter(item => {
+        const matchesQuery = !query || 
+          item.certNo.toLowerCase().includes(query) ||
+          item.regNo.toLowerCase().includes(query) ||
+          item.nid.toLowerCase().includes(query) ||
+          item.name.toLowerCase().includes(query);
+
+        const matchesTrade = trade === 'all' || item.trade.toLowerCase() === trade.toLowerCase();
+
+        return matchesQuery && matchesTrade;
+      });
+
+      renderCertificateTable(filtered);
+
+      // Feedback Banner
+      feedback.classList.remove('hidden');
+      if (filtered.length > 0) {
+        feedback.className = "mt-4 p-4 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 font-bn text-xs flex items-center justify-between";
+        feedback.innerHTML = `
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-circle-check text-emerald-600 text-lg"></i>
+            <div>
+              <strong>অভিনন্দন! ভ্যালিড সার্টিফিকেট রেকর্ড পাওয়া গেছে।</strong>
+              <p class="text-slate-600 text-[11px]">${filtered[0].name} (${filtered[0].certNo}) এর রেকর্ড সক্রিয় ও প্রমিত।</p>
+            </div>
+          </div>
+          <button onclick="viewCertificate('${filtered[0].certNo}')" class="px-4 py-1.5 rounded-xl bg-emerald-600 text-white font-bold text-xs shadow-sm hover:bg-emerald-700 transition">
+            সনদপত্র ওপেন করুন
+          </button>
+        `;
+      } else {
+        feedback.className = "mt-4 p-4 rounded-2xl bg-rose-50 border border-rose-200 text-rose-900 font-bn text-xs flex items-center gap-2";
+        feedback.innerHTML = `
+          <i class="fa-solid fa-circle-xmark text-rose-600 text-lg"></i>
+          <div>
+            <strong>দুঃখিত! কোনো তথ্য পাওয়া যায়নি।</strong>
+            <p class="text-slate-600 text-[11px]">অনুগ্রহ করে সার্টিফিকেট বা রেজিস্ট্রেশন নম্বরটি সঠিকভাবে যাচাই করে পুনরায় চেষ্টা করুন।</p>
+          </div>
+        `;
+      }
+    }
+
+    function fillAndSearch(certId) {
+      document.getElementById('searchInput').value = certId;
+      document.getElementById('tradeFilter').value = 'all';
+      handleSearch();
+    }
+
+    function resetSearch() {
+      document.getElementById('searchInput').value = '';
+      document.getElementById('tradeFilter').value = 'all';
+      document.getElementById('searchFeedback').classList.add('hidden');
+      renderCertificateTable(certificateDatabase);
+    }
+
+    // Modal Control & Live Certificate Injection
+    function viewCertificate(certNo) {
+      const candidate = certificateDatabase.find(c => c.certNo === certNo);
+      if (!candidate) return;
+
+      document.getElementById('certModalId').innerText = candidate.certNo;
+      document.getElementById('certModalName').innerText = candidate.name;
+      document.getElementById('certModalFather').innerText = `পিতা/মাতা: ${candidate.father} | রেজিস্ট্রেশন নং: ${candidate.regNo} | NID: ${candidate.nid}`;
+      document.getElementById('certModalCourse').innerText = candidate.courseTitle;
+      document.getElementById('certModalDate').innerText = candidate.issueDate;
+
+      document.getElementById('certificateModal').classList.remove('hidden');
+    }
+
+    function closeCertificateModal() {
+      document.getElementById('certificateModal').classList.add('hidden');
+    }
+
+    function downloadCertificateDirect(certNo) {
+      viewCertificate(certNo);
+      setTimeout(() => {
+        window.print();
+      }, 300);
+    }
+
+    // Mobile nav toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Apply Modal
+    function openApplyModal() {
+      document.getElementById('applyModal').classList.remove('hidden');
+    }
+    function closeApplyModal() {
+      document.getElementById('applyModal').classList.add('hidden');
+    }
+    function handleApplySubmit(e) {
+      e.preventDefault();
+      alert("আপনার আবেদন সফলভাবে গৃহীত হয়েছে। আমাদের টিম শীঘ্রই যোগাযোগ করবে।");
+      closeApplyModal();
+      e.target.reset();
+    }
+
+    // Close modals on outside click
+    window.addEventListener('click', (e) => {
+      const certModal = document.getElementById('certificateModal');
+      const applyModal = document.getElementById('applyModal');
+      if (e.target === certModal) closeCertificateModal();
+      if (e.target === applyModal) closeApplyModal();
+    });
+
+    // Initial render on load
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCertificateTable(certificateDatabase);
+    });
+  </script>
+
+</body>
+</html>
