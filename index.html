@@ -120,106 +120,123 @@
   <header
     class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-slate-200/80 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-right justify-between h-20 gap-4">
+      <div class="flex items-center justify-between h-20 gap-4">
 
         <!-- Brand Logo & Identity -->
-        <div class="flex items-center gap-2 shrink-0">
-          <span><img src="./Image/Group2098.png" alt="" class="h-[40px]"></span>
-          <span><img src="./Image/gov-modify.png" alt="" class="h-[40px]"></span>
-          <span><img src="./Image/logo.jpg" alt="" class="h-[40px]"></span>
+        <!-- <a href="index.html" class="flex items-center gap-3 group shrink-0">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-700 to-blue-500 text-white flex items-center justify-center font-bold text-2xl shadow-md group-hover:scale-105 transition-transform duration-300">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900">
+                Skill<span class="text-brand-600">Bridge</span>
+              </span>
+              <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-blue-100 text-brand-700 border border-blue-200">
+                NSDA
+              </span>
+            </div>
+            <p class="text-[11px] font-medium text-slate-500 tracking-wide font-bn">IT Farm & Language Center</p>
+          </div>
+        </a> -->
+
+
+        <div class="flex items-center gap-4">
+          <span class="w-10"><img src="./Image/Group2098.png" alt="" class="w-[50px] object-cover"></span>
+          <span class="w-10"><img src="./Image/gov-modify.png" alt="" class="w-5 object-cover"></span>
+          <span class="w-10"><img src="./Image/logo.jpg" alt="" class="w-5 object-cover"></span>
         </div>
 
 
 
         <!-- Desktop Navigation Links (Clean, Well-Aligned Structure) -->
+        <nav class="hidden lg:flex items-right gap-1 xl:gap-2 text-sm font-semibold text-slate-700 font-bn">
+          <a href="index.html" class="px-3.5 py-2 rounded-xl text-brand-600 bg-brand-50 transition">হোম</a>
+          <a href="about.html" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">আমাদের
+            পরিচিতি</a>
+
+          <!-- Courses Dropdown -->
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none">
+              <span>কোর্সসমূহ</span>
+              <i
+                class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform duration-200"></i>
+            </button>
+            <div class="absolute top-full left-0 pt-2 w-60 hidden group-hover:block z-50">
+              <div class="bg-white rounded-2xl shadow-xl border border-slate-150 p-2 space-y-1">
+                <a href="index.html#courses"
+                  class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">
+                  <span
+                    class="w-7 h-7 rounded-lg bg-blue-100 text-brand-600 flex items-center justify-center text-xs"><i
+                      class="fa-solid fa-laptop-code"></i></span>
+                  <div>
+                    <p class="text-slate-900 font-bold">IT & Development</p>
+                    <span class="text-[10px] text-slate-400">Laravel, Web & Support</span>
+                  </div>
+                </a>
+                <a href="index.html#courses"
+                  class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 hover:bg-purple-50 hover:text-purple-600 transition">
+                  <span
+                    class="w-7 h-7 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center text-xs"><i
+                      class="fa-solid fa-palette"></i></span>
+                  <div>
+                    <p class="text-slate-900 font-bold">Graphic & UI/UX</p>
+                    <span class="text-[10px] text-slate-400">Photoshop, Figma</span>
+                  </div>
+                </a>
+                <a href="index.html#languages"
+                  class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 transition">
+                  <span
+                    class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs"><i
+                      class="fa-solid fa-language"></i></span>
+                  <div>
+                    <p class="text-slate-900 font-bold">ভাষা শিক্ষা কোর্স</p>
+                    <span class="text-[10px] text-slate-400">জাপানিজ, জার্মান, ইংরেজি</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="index.html#assessment"
+            class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">NSDA অ্যাসেসমেন্ট</a>
+          <a href="index.html#batches"
+            class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">আপকামিং ব্যাচ</a>
+
+          <!-- More Dropdown -->
+          <div class="relative group">
+            <button
+              class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none">
+              <span>আরও</span>
+              <i
+                class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform duration-200"></i>
+            </button>
+            <div class="absolute top-full right-0 pt-2 w-52 hidden group-hover:block z-50">
+              <div class="bg-white rounded-2xl shadow-xl border border-slate-150 p-2 space-y-1">
+                <a href="#why-choose"
+                  class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">
+                  <i class="fa-solid fa-award text-amber-500 w-4 text-center"></i> কেন স্কিলব্রিজ?
+                </a>
+                <a href="certificate.html"
+                  class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition font-bn font-bold text-brand-700">
+                  <i class="fa-solid fa-certificate text-emerald-600 w-4 text-center"></i> সনদ যাচাই ও ডাউনলোড
+                </a>
+                <a href="#facilities"
+                  class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">
+                  <i class="fa-solid fa-building-columns text-brand-600 w-4 text-center"></i> সুবিধা ও ল্যাব
+                </a>
+                <a href="index.html#notices"
+                  class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">
+                  <i class="fa-solid fa-bullhorn text-rose-500 w-4 text-center"></i> নোটিশ ও খবর
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
 
         <!-- Right Action Buttons (Clean & Proportional) -->
         <div class="hidden sm:flex items-center gap-3 shrink-0">
-          <nav class="hidden lg:flex items-right gap-0 xl:gap-0 text-sm font-semibold text-slate-700 font-bn">
-            <a href="index.html" class="px-3.5 py-2 rounded-xl text-brand-600 bg-brand-50 transition">হোম</a>
-            <a href="about.html"
-              class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">আমাদের
-              পরিচিতি</a>
-
-            <!-- Courses Dropdown -->
-            <div class="relative group">
-              <button
-                class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none">
-                <span>কোর্সসমূহ</span>
-                <i
-                  class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform duration-200"></i>
-              </button>
-              <div class="absolute top-full left-0 pt-2 w-60 hidden group-hover:block z-50">
-                <div class="bg-white rounded-2xl shadow-xl border border-slate-150 p-2 space-y-1">
-                  <a href="index.html#courses"
-                    class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">
-                    <span
-                      class="w-7 h-7 rounded-lg bg-blue-100 text-brand-600 flex items-center justify-center text-xs"><i
-                        class="fa-solid fa-laptop-code"></i></span>
-                    <div>
-                      <p class="text-slate-900 font-bold">IT & Development</p>
-                      <span class="text-[10px] text-slate-400">Laravel, Web & Support</span>
-                    </div>
-                  </a>
-                  <a href="index.html#courses"
-                    class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 hover:bg-purple-50 hover:text-purple-600 transition">
-                    <span
-                      class="w-7 h-7 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center text-xs"><i
-                        class="fa-solid fa-palette"></i></span>
-                    <div>
-                      <p class="text-slate-900 font-bold">Graphic & UI/UX</p>
-                      <span class="text-[10px] text-slate-400">Photoshop, Figma</span>
-                    </div>
-                  </a>
-                  <a href="index.html#languages"
-                    class="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-600 transition">
-                    <span
-                      class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center text-xs"><i
-                        class="fa-solid fa-language"></i></span>
-                    <div>
-                      <p class="text-slate-900 font-bold">ভাষা শিক্ষা কোর্স</p>
-                      <span class="text-[10px] text-slate-400">জাপানিজ, জার্মান, ইংরেজি</span>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <a href="index.html#assessment"
-              class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">NSDA অ্যাসেসমেন্ট</a>
-            <!-- <a href="index.html#batches"
-              class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">আপকামিং ব্যাচ</a> -->
-
-            <!-- More Dropdown -->
-            <div class="relative group">
-              <button
-                class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none">
-                <span>আরও</span>
-                <i
-                  class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform duration-200"></i>
-              </button>
-              <div class="absolute top-full right-0 pt-2 w-52 hidden group-hover:block z-50">
-                <div class="bg-white rounded-2xl shadow-xl border border-slate-150 p-2 space-y-1">
-                  <a href="#why-choose"
-                    class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">
-                    <i class="fa-solid fa-award text-amber-500 w-4 text-center"></i> কেন স্কিলব্রিজ?
-                  </a>
-                  <a href="certificate.html"
-                    class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition font-bn font-bold text-brand-700">
-                    <i class="fa-solid fa-certificate text-emerald-600 w-4 text-center"></i> সনদ যাচাই ও ডাউনলোড
-                  </a>
-                  <a href="#facilities"
-                    class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">
-                    <i class="fa-solid fa-building-columns text-brand-600 w-4 text-center"></i> সুবিধা ও ল্যাব
-                  </a>
-                  <a href="index.html#notices"
-                    class="flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs font-semibold text-slate-700 hover:bg-brand-50 hover:text-brand-600 transition">
-                    <i class="fa-solid fa-bullhorn text-rose-500 w-4 text-center"></i> নোটিশ ও খবর
-                  </a>
-                </div>
-              </div>
-            </div>
-          </nav>
           <button onclick="openAssessmentModal()"
             class="px-3.5 py-2.5 text-xs font-bold rounded-xl border border-slate-200 text-slate-700 hover:border-brand-600 hover:text-brand-600 hover:bg-slate-50 transition font-bn">
             <i class="fa-solid fa-file-signature text-brand-600 mr-1"></i> অ্যাসেসমেন্ট
@@ -330,43 +347,6 @@
             ফ্রিল্যান্সিংয়ে দক্ষ ও আন্তর্জাতিক ক্যারিয়ারের জন্য গড়ে তোলার একটি আধুনিক শিক্ষাপ্রতিষ্ঠান।
           </p>
 
-          <!-- Core Value Badges -->
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 font-bn">
-            <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white border border-slate-200/90 shadow-sm">
-              <div
-                class="w-8 h-8 rounded-lg bg-blue-100 text-brand-600 flex items-center justify-center text-sm font-bold">
-                <i class="fa-solid fa-laptop-code"></i>
-              </div>
-              <div class="text-left">
-                <p class="text-xs text-slate-500 font-medium">হ্যান্ডস-অন ট্রেনিং</p>
-                <p class="text-xs font-bold text-slate-800">১০০% ল্যাব প্র্যাকটিস</p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white border border-slate-200/90 shadow-sm">
-              <div
-                class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm font-bold">
-                <i class="fa-solid fa-award"></i>
-              </div>
-              <div class="text-left">
-                <p class="text-xs text-slate-500 font-medium">মানসম্মত মূল্যায়ন</p>
-                <p class="text-xs font-bold text-slate-800">NSDA CBT&A / RPL</p>
-              </div>
-            </div>
-
-            <div
-              class="flex items-center gap-2.5 p-2.5 rounded-xl bg-white border border-slate-200/90 shadow-sm col-span-2 sm:col-span-1">
-              <div
-                class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center text-sm font-bold">
-                <i class="fa-solid fa-briefcase"></i>
-              </div>
-              <div class="text-left">
-                <p class="text-xs text-slate-500 font-medium">কর্মসংস্থান সাপোর্ট</p>
-                <p class="text-xs font-bold text-slate-800">ইন্টার্নশিপ সুযোগ</p>
-              </div>
-            </div>
-          </div>
-
           <!-- CTA Buttons -->
           <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
             <button onclick="openApplyModal()"
@@ -410,48 +390,7 @@
               class="absolute inset-0 bg-gradient-to-tr from-brand-600 to-indigo-500 rounded-3xl rotate-2 scale-105 opacity-20 blur-xl">
             </div>
 
-            <!-- Main Hero Card Container -->
-            <div class="relative rounded-3xl overflow-hidden bg-white p-3 shadow-2xl border border-slate-200/80">
-              <img src="Homepage/hero.png" alt="SkillBridge IT Farm and Language Center Training Lab"
-                class="w-full h-auto rounded-2xl object-cover transform hover:scale-[1.02] transition duration-500 shadow-sm"
-                loading="eager">
 
-              <!-- Image Caption Overlay Strip -->
-              <div class="mt-3 p-3 bg-slate-900 rounded-xl text-white flex items-center justify-between">
-                <div>
-                  <h2 class="text-xs uppercase tracking-wider text-slate-400 font-bold">Training Lab & Classroom</h2>
-                  <p class="text-sm font-semibold font-bn">আধুনিক কম্পিউটার ল্যাব ও ইন্টারঅ্যাক্টিভ ক্লাসরুম</p>
-                </div>
-                <span class="px-2.5 py-1 rounded bg-brand-600 text-white text-xs font-bold">
-                  Active Lab
-                </span>
-              </div>
-            </div>
-
-            <!-- Floating Badge 1: NSDA Alignment -->
-            <div
-              class="absolute -bottom-6 -left-6 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-slate-200 flex items-center gap-3 hidden sm:flex">
-              <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl">
-                <i class="fa-solid fa-certificate"></i>
-              </div>
-              <div>
-                <p class="text-[11px] font-bold text-slate-400 uppercase tracking-wide">Accreditation</p>
-                <p class="text-sm font-extrabold text-slate-900">NSDA CBT&A Standard</p>
-                <p class="text-[11px] text-emerald-600 font-semibold font-bn">কম্পিটেন্সি বেজড অ্যাসেসমেন্ট</p>
-              </div>
-            </div>
-
-            <!-- Floating Badge 2: Success Rate -->
-            <div
-              class="absolute -top-5 -right-5 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-xl border border-slate-200 flex items-center gap-3 hidden sm:flex">
-              <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center text-lg">
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <div>
-                <p class="text-xs font-extrabold text-slate-900">Practical & Project-Based</p>
-                <p class="text-[11px] text-slate-500 font-bn">রিয়েল-ওয়ার্ল্ড প্রজেক্ট লার্নিং</p>
-              </div>
-            </div>
 
           </div>
         </div>
@@ -644,12 +583,8 @@
         <a href="#courses"
           class="inline-block hover:opacity-95 transition-opacity transform hover:scale-[1.01] duration-200"
           title="Learn More About Us">
-          <button class="px-8 py-4 rounded-full text-white font-semibold
-         bg-gradient-to-r from-blue-700 via-purple-500 to-orange-500
-         shadow-lg hover:opacity-90 transition-all duration-300">
-            About Us & Our Training Approach
-          </button>
-
+          <img src="Homepage/aboutusbtn.png" alt="Learn More About Us - SkillBridge"
+            class="max-w-md w-full h-auto drop-shadow-md rounded-xl">
         </a>
         <div class="flex items-center gap-3">
           <button onclick="openApplyModal()"
@@ -1053,7 +988,7 @@
           Admissions Now Open | Upcoming Batches | Internship Opportunities
         </h2>
         <p class="text-base text-slate-600 mt-3 font-bn">
-          নতুন ব্যাচে নির্দিষ্ট সংখ্যক আসনে সরাসরি ভর্তি চলছে। কোর্স সফলভাবে সম্পন্নকারীদের জন্য রয়েছে স্কিলব্রিজ
+          নতুন ব্যাচে নির্দিষ্ট সংখ্যক আসনে সরাসরি ভর্তি চলছে। কোর্স সফলভাবে সম্পন্নকারীদের জন্য রয়েছে স্কিলব্রিজ
           পার্টনার আইটি ফার্মে ইন্টার্নশিপের সুযোগ।
         </p>
       </div>
