@@ -36,6 +36,7 @@
               700: '#1e40af',
               800: '#1e3a8a',
               900: '#0f172a',
+              950: '#070d1e',
             },
             accent: {
               emerald: '#059669',
@@ -56,7 +57,7 @@
       font-family: 'Hind Siliguri', sans-serif;
     }
     .bg-dot-pattern {
-      background-image: radial-gradient(rgba(37, 99, 235, 0.12) 1px, transparent 1px);
+      background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
       background-size: 24px 24px;
     }
     
@@ -134,32 +135,21 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-20 gap-4">
         
-        <!-- Brand Logo & Identity -->
-        <a href="index.html" class="flex items-center gap-3 group shrink-0">
-          <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-brand-700 to-blue-500 text-white flex items-center justify-center font-bold text-2xl shadow-md group-hover:scale-105 transition-transform duration-300">
-            <i class="fa-solid fa-graduation-cap"></i>
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <span class="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900">
-                Skill<span class="text-brand-600">Bridge</span>
-              </span>
-              <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded bg-blue-100 text-brand-700 border border-blue-200">
-                NSDA
-              </span>
-            </div>
-            <p class="text-[11px] font-medium text-slate-500 tracking-wide font-bn">IT Farm & Language Center</p>
-          </div>
+        <!-- Brand Logo & Partner Seals -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3.5 shrink-0" aria-label="SkillBridge Home">
+          <img src="./Image/Group2098.png" alt="NSDA Logo" class="h-8 sm:h-10 xl:h-11 w-auto object-contain">
+          <img src="./Image/gov-modify.png" alt="Bangladesh Govt Seal" class="h-8 sm:h-10 xl:h-11 w-auto object-contain">
+          <img src="./Image/logo.jpg" alt="SkillBridge Logo" class="h-8 sm:h-10 xl:h-11 w-auto object-contain">
         </a>
 
-        <!-- Desktop Navigation Links -->
-        <nav class="hidden lg:flex items-center gap-1 xl:gap-2 text-sm font-semibold text-slate-700 font-bn">
-          <a href="index.html" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">হোম</a>
-          <a href="about.html" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">আমাদের পরিচিতি</a>
+        <!-- Desktop Navigation Links (Responsive, Right Aligned & Non-wrapping) -->
+        <nav class="hidden lg:flex items-center justify-end gap-1 xl:gap-2 text-xs xl:text-sm font-semibold text-slate-700 font-bn ml-auto">
+          <a href="index.html" class="px-2.5 xl:px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition whitespace-nowrap">হোম</a>
+          <a href="about.html" class="px-2.5 xl:px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition whitespace-nowrap">আমাদের পরিচিতি</a>
           
           <!-- Courses Dropdown -->
           <div class="relative group">
-            <button class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none">
+            <button class="flex items-center gap-1.5 px-2.5 xl:px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none whitespace-nowrap">
               <span>কোর্সসমূহ</span>
               <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform duration-200"></i>
             </button>
@@ -190,18 +180,18 @@
             </div>
           </div>
 
-          <a href="index.html#assessment" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">NSDA অ্যাসেসমেন্ট</a>
-          <a href="certificate.html" class="px-3.5 py-2 rounded-xl text-brand-600 bg-brand-50 font-bold transition">সনদ যাচাই ও ডাউনলোড</a>
-          <a href="index.html#batches" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">আপকামিং ব্যাচ</a>
+          <a href="index.html#assessment" class="px-2.5 xl:px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition whitespace-nowrap">NSDA অ্যাসেসমেন্ট</a>
+          <a href="certificate.html" class="px-2.5 xl:px-3.5 py-2 rounded-xl text-brand-600 bg-brand-50 font-bold transition whitespace-nowrap">সনদ যাচাই ও ডাউনলোড</a>
+          <a href="index.html#batches" class="px-2.5 xl:px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition whitespace-nowrap">আপকামিং ব্যাচ</a>
         </nav>
 
         <!-- Right Action Buttons -->
-        <div class="hidden sm:flex items-center gap-3 shrink-0">
-          <a href="#verifyBox" class="px-3.5 py-2.5 text-xs font-bold rounded-xl border border-brand-200 text-brand-700 hover:bg-brand-50 transition font-bn flex items-center gap-1.5">
+        <div class="hidden sm:flex items-center gap-2 xl:gap-3 shrink-0">
+          <a href="#verifyBox" class="px-3 xl:px-3.5 py-2 xl:py-2.5 text-xs font-bold rounded-xl border border-brand-200 text-brand-700 hover:bg-brand-50 transition font-bn flex items-center gap-1.5 whitespace-nowrap">
             <i class="fa-solid fa-qrcode text-brand-600"></i>
             <span>দ্রুত যাচাই</span>
           </a>
-          <button onclick="openApplyModal()" class="px-5 py-2.5 text-xs lg:text-sm font-bold rounded-xl bg-gradient-to-r from-brand-600 to-blue-600 text-white shadow-md shadow-blue-500/25 hover:from-brand-700 hover:to-blue-700 hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2 font-bn">
+          <button onclick="openApplyModal()" class="px-4 xl:px-5 py-2 xl:py-2.5 text-xs lg:text-sm font-bold rounded-xl bg-gradient-to-r from-brand-600 to-blue-600 text-white shadow-md shadow-blue-500/25 hover:from-brand-700 hover:to-blue-700 hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-1.5 xl:gap-2 font-bn whitespace-nowrap">
             <span>ভর্তি আবেদন</span>
             <i class="fa-solid fa-arrow-right text-xs"></i>
           </button>
@@ -238,7 +228,8 @@
   <!-- ==========================================
        HERO & PORTAL HEADER (Inspired by skillsportal.gov.bd)
   =========================================== -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-brand-950 via-slate-900 to-indigo-950 text-white py-14 lg:py-18 bg-dot-pattern">
+  <section class="relative overflow-hidden bg-[#070d1e] bg-gradient-to-b from-[#070d1e] via-[#0c1638] to-[#0a1128] text-white py-14 lg:py-18">
+    <div class="absolute inset-0 bg-dot-pattern opacity-30 pointer-events-none"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">

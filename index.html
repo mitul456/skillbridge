@@ -141,24 +141,22 @@
         </a> -->
 
 
-        <div class="flex items-center gap-4">
-          <span class="w-10"><img src="./Image/Group2098.png" alt="" class="w-[50px] object-cover"></span>
-          <span class="w-10"><img src="./Image/gov-modify.png" alt="" class="w-5 object-cover"></span>
-          <span class="w-10"><img src="./Image/logo.jpg" alt="" class="w-5 object-cover"></span>
-        </div>
+        <!-- Brand Logo & Partner Seals -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3.5 shrink-0" aria-label="SkillBridge Home">
+          <img src="./Image/Group2098.png" alt="NSDA Logo" class="h-8 sm:h-11 w-auto object-contain">
+          <img src="./Image/gov-modify.png" alt="Bangladesh Govt Seal" class="h-8 sm:h-11 w-auto object-contain">
+          <img src="./Image/logo.jpg" alt="SkillBridge Logo" class="h-8 sm:h-11 w-auto object-contain">
+        </a>
 
-
-
-        <!-- Desktop Navigation Links (Clean, Well-Aligned Structure) -->
-        <nav class="hidden lg:flex items-right gap-1 xl:gap-2 text-sm font-semibold text-slate-700 font-bn">
-          <a href="index.html" class="px-3.5 py-2 rounded-xl text-brand-600 bg-brand-50 transition">হোম</a>
-          <a href="about.html" class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">আমাদের
-            পরিচিতি</a>
+        <!-- Desktop Navigation Links (Responsive, Right Aligned & Non-wrapping) -->
+        <nav class="hidden lg:flex items-center justify-end gap-1 xl:gap-2 text-xs xl:text-sm font-semibold text-slate-700 font-bn ml-auto">
+          <a href="index.html" class="px-2.5 xl:px-3.5 py-2 rounded-xl text-brand-600 bg-brand-50 transition whitespace-nowrap">হোম</a>
+          <a href="about.html" class="px-2.5 xl:px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition whitespace-nowrap">আমাদের পরিচিতি</a>
 
           <!-- Courses Dropdown -->
           <div class="relative group">
             <button
-              class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none">
+              class="flex items-center gap-1.5 px-2.5 xl:px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none whitespace-nowrap">
               <span>কোর্সসমূহ</span>
               <i
                 class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform duration-200"></i>
@@ -200,14 +198,14 @@
           </div>
 
           <a href="index.html#assessment"
-            class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">NSDA অ্যাসেসমেন্ট</a>
+            class="px-2.5 xl:px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition whitespace-nowrap">NSDA অ্যাসেসমেন্ট</a>
           <a href="index.html#batches"
-            class="px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition">আপকামিং ব্যাচ</a>
+            class="px-2.5 xl:px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition whitespace-nowrap">আপকামিং ব্যাচ</a>
 
           <!-- More Dropdown -->
           <div class="relative group">
             <button
-              class="flex items-center gap-1.5 px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none">
+              class="flex items-center gap-1.5 px-2.5 xl:px-3.5 py-2 rounded-xl hover:text-brand-600 hover:bg-slate-100 transition focus:outline-none whitespace-nowrap">
               <span>আরও</span>
               <i
                 class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-hover:rotate-180 transition-transform duration-200"></i>
@@ -236,13 +234,13 @@
         </nav>
 
         <!-- Right Action Buttons (Clean & Proportional) -->
-        <div class="hidden sm:flex items-center gap-3 shrink-0">
+        <div class="hidden sm:flex items-center gap-2 xl:gap-3 shrink-0">
           <button onclick="openAssessmentModal()"
-            class="px-3.5 py-2.5 text-xs font-bold rounded-xl border border-slate-200 text-slate-700 hover:border-brand-600 hover:text-brand-600 hover:bg-slate-50 transition font-bn">
+            class="px-3 xl:px-3.5 py-2 xl:py-2.5 text-xs font-bold rounded-xl border border-slate-200 text-slate-700 hover:border-brand-600 hover:text-brand-600 hover:bg-slate-50 transition font-bn whitespace-nowrap">
             <i class="fa-solid fa-file-signature text-brand-600 mr-1"></i> অ্যাসেসমেন্ট
           </button>
           <button onclick="openApplyModal()"
-            class="px-5 py-2.5 text-xs lg:text-sm font-bold rounded-xl bg-gradient-to-r from-brand-600 to-blue-600 text-white shadow-md shadow-blue-500/25 hover:from-brand-700 hover:to-blue-700 hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2 font-bn">
+            class="px-4 xl:px-5 py-2 xl:py-2.5 text-xs lg:text-sm font-bold rounded-xl bg-gradient-to-r from-brand-600 to-blue-600 text-white shadow-md shadow-blue-500/25 hover:from-brand-700 hover:to-blue-700 hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-1.5 xl:gap-2 font-bn whitespace-nowrap">
             <span>ভর্তি আবেদন</span>
             <i class="fa-solid fa-arrow-right text-xs"></i>
           </button>
